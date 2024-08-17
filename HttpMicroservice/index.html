@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Average Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        label {
+            margin-right: 10px;
+        }
+        input, button {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Average Calculator</h1>
+    <div>
+        <label for="numberid">Select Number Type:</label>
+        <select id="numberid">
+            <option value="p">Primes</option>
+            <option value="e">Even</option>
+            <option value="f">Fibonacci</option>
+            <option value="r">Random</option>
+        </select>
+        <button onclick="fetchNumbers()">Get Numbers</button>
+    </div>
+    <h2>Results</h2>
+    <div id="results">
+        <p><strong>Previous Window State:</strong> <span id="windowPrevState">[]</span></p>
+        <p><strong>Current Window State:</str
